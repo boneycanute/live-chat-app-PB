@@ -9,6 +9,7 @@ import Users from "./Components/Users";
 import CreateGroups from "./Components/CreateGroups";
 import Groups from "./Components/Groups";
 import { useDispatch, useSelector } from "react-redux";
+import Conversations from "./Components/Conversations";
 
 function App() {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ function App() {
           <Route path="users" element={<Users />}></Route>
           <Route path="groups" element={<Groups />}></Route>
           <Route path="create-groups" element={<CreateGroups />}></Route>
+          <Route path="conversations" element={<Conversations />}></Route>
         </Route>
       </Routes>
     </div>
